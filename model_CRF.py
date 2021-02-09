@@ -11,8 +11,8 @@ import os
 
 os.environ["CUDA_VISIBLE_DEVICES"] = "1"
 
-data_path = './mydata/jixunying.txt'
-with open('./mydata/data.pk', 'rb') as f1:
+data_path = './data/data.txt'
+with open('./data/data.pk', 'rb') as f1:
     word2id, id2word, tag2id, id2tag = pickle.load(f1)
 data = data_util.data_util(data_path, word2id, tag2id)
 
